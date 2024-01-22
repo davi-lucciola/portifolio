@@ -66,7 +66,29 @@ header {
 
 }
 
-.navbar > li {
+.resume {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.resume {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume a {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    padding-inline: 32px;
+    transition: 0.3s;
+}
+
+.navbar > li{
     flex: 1;
     display: flex;
     align-items: center;
@@ -74,7 +96,7 @@ header {
     transition: 0.3s;
 }
 
-.navbar li:hover {
+.navbar li:hover, .resume a:hover {
     background-color: var(--purple-100);
 }
 
