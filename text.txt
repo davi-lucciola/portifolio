@@ -1,7 +1,0 @@
-Set Execution
-Sort Keys
-Methods
-Path
-Retorno de Status Codes
-Static
-Corrigir Direcionamento
