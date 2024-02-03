@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pórtifolio" />
+    {% block meta %}
+    {% endblock %}
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <nav>
+          <ul class="navbar">
+            <li>
+              <a href="/"> Sobre Mim </a>
+            </li>
+            <li>
+              <a href="/projetos"> Meus Projetos </a>
+            </li>
+            <li>
+              <a href="/experiencias"> Experiencias </a>
+            </li>
+          </ul>
+        </nav>
+        <h1>Davi Lucciola</h1>
+        <div class="resume">
+          <a href="/static/pdf/DaviCv.pdf" target="_blank">
+            Resumo - CV
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      {% block main %}
+      {% endblock %}
+    </main>
+    <footer>
+      <p>©Davi Lucciola</p>
+      <div>
+        <p>Me siga nas Redes Sociais</p>
+        <div class="social-media"></div>
+      </div>
+    </footer>
+  </body>
+</html>

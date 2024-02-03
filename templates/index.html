@@ -1,70 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pórtifolio" />
-    <title>Davi Lucciola (Dev)</title>
-    <link rel="stylesheet" href="/static/css/global.css" />
-    <link rel="stylesheet" href="/static/css/index.css" />
-    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="header">
-        <nav>
-          <ul class="navbar">
-            <li>
-              <a href="/"> Sobre Mim </a>
-            </li>
-            <li>
-              <a href="/projetos"> Meus Projetos </a>
-            </li>
-            <li>
-              <a href="/experiencias"> Experiencias </a>
-            </li>
-          </ul>
-        </nav>
-        <h1>Davi Lucciola</h1>
-        <div class="resume">
-          <a href="/static/pdf/DaviCv.pdf" target="_blank">
-            Resumo - CV
-          </a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="main">
-        <section class="info">
-          <h1>
-            Desenvolvedor <span class="marked">Backend</span>
-            <strong class="focus">Full Stack</strong>
-          </h1>
-          <p>
-            <strong class="focus">Soluções</strong> para o seu negócio, ganhe
-            <strong>tempo</strong> na <strong>automatização</strong> de
-            processos operacionais. <strong class="focus">Escale</strong> o seu negócio com
-            <strong class="focus">Softwares</strong> de <strong class="focus">Qualidade</strong>
-          </p>
-          <a class="contato" href="/contato"> 
-            Fazer Orçamento 
-          </a>
-        </section>
-        <img id="me" src="/static/images/me.png" alt="davi-lucciola-anime" />
-      </div>
-    </main>
-    <footer>
-      <p>©Davi Lucciola</p>
-      <div>
-        <p>Me siga nas Redes Sociais</p>
-        <div class="social-media"></div>
-      </div>
-    </footer>
-  </body>
-</html>
+{% extends '_layout.html' %}
+
+{% block meta %}
+  <title>Davi Lucciola (Dev)</title>
+  <link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block main %} 
+  <div class="main">
+    <section class="info">
+      <h1>
+        Desenvolvedor <span class="marked">Backend</span>
+        <strong class="focus">Full Stack</strong>
+      </h1>
+      <p>
+        <strong class="focus">Soluções</strong> para o seu negócio, ganhe
+        <strong>tempo</strong> na <strong>automatização</strong> de
+        processos operacionais. <strong class="focus">Escale</strong> o seu negócio com
+        <strong class="focus">Softwares</strong> de <strong class="focus">Qualidade</strong>
+      </p>
+      <a class="contato" href="/contato"> 
+        Fazer Orçamento 
+      </a>
+    </section>
+    <img id="me" src="/static/images/me.png" alt="davi-lucciola-anime" />
+  </div>
+{% endblock %}
