@@ -1,0 +1,69 @@
+header {
+  font-family: "JetBrains Mono", monospace;
+}
+header nav #logo h1 {
+  padding: 2px 8px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+header nav #logo:hover > h1 {
+  color: #731BC5 !important;
+  background-color: #FAFAFA;
+}
+header nav #brand {
+  height: 5rem;
+  border-radius: 50%;
+}
+header nav .navbar-nav .nav-item {
+  padding-inline: 2rem;
+  transition: 0.3s;
+}
+header nav .navbar-nav .nav-item:hover {
+  background-color: #731BC5;
+}
+
+main {
+  font-family: "JetBrains Mono", monospace;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/static/images/synthwave.gif");
+}
+main #banner p {
+  line-height: 32px;
+}
+main #banner .focus {
+  color: #731BC5;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  font-weight: 900;
+  padding: 2px 8px;
+  transition: 0.3s;
+}
+main #banner .focus:hover {
+  cursor: default;
+  color: #FAFAFA;
+  background-color: #731BC5;
+}
+main #banner #cv-download {
+  width: 100%;
+}
+main #banner #me {
+  height: 25rem;
+}
+@media (min-width: 1000px) {
+  main #banner :first-child {
+    justify-content: flex-start !important;
+  }
+  main #banner :first-child .info {
+    max-width: 900px;
+  }
+  main #banner :first-child #cv-download {
+    width: 50%;
+  }
+  main #banner :first-child #me {
+    height: 45rem;
+    align-self: flex-end;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "flask run --debug",
+    "pinstall": "poetry install && npm install",
+    "clean": "rm -rf ./.venv && rm -rf ./node_modules",
+    "reinstall": "npm run clean && npm run pinstall",
+    "style": "sass ./portifoliov1/static/styles/sass/bootstrap.scss ./portifoliov1/static/styles/css/bootstrap.css && sass ./portifoliov1/static/styles/sass/global.scss ./portifoliov1/static/styles/css/global.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
