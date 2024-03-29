@@ -1,0 +1,34 @@
+{% macro hero() %}
+<section
+  id="hero"
+  class="container-fluid d-flex text-white min-vh-100 bg-black bg-opacity-50"
+>
+  <div
+    class="container-xl d-flex flex-column flex-lg-row justify-content-end align-items-center ps-2 pe-2"
+  >
+    <div class="info d-flex flex-column gap-3">
+      <h1>
+        Desenvolvedor
+        <span class="text-decoration-line-through">Backend</span>
+        <strong class="focus">Full Stack</strong>
+      </h1>
+      <p class="fs-5">
+        <strong class="focus">Soluções</strong> para o seu negócio, ganhe
+        <strong>tempo</strong> na <strong>automatização</strong> de processos
+        operacionais. <strong class="focus">Escale</strong> o seu negócio com
+        <strong class="focus">Softwares</strong> de
+        <strong class="focus">Qualidade</strong>
+      </p>
+      <a
+        id="cv-download"
+        class="btn btn-primary fs-5"
+        href="/static/pdf/DaviCv.pdf"
+        target="_blank"
+      >
+        Baixar Curriculo
+      </a>
+    </div>
+    <img id="me" src="/static/images/me.png" alt="davi-lucciola-anime" />
+  </div>
+</section>
+{% endmacro %}

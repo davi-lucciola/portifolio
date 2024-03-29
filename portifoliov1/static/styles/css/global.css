@@ -28,10 +28,10 @@ main {
   background-repeat: no-repeat;
   background-image: url("/static/images/synthwave.gif");
 }
-main #banner p {
+main #hero p {
   line-height: 32px;
 }
-main #banner .focus {
+main #hero .focus {
   color: #731BC5;
   background-color: #FAFAFA;
   border-radius: 4px;
@@ -39,31 +39,34 @@ main #banner .focus {
   padding: 2px 8px;
   transition: 0.3s;
 }
-main #banner .focus:hover {
+main #hero .focus:hover {
   cursor: default;
   color: #FAFAFA;
   background-color: #731BC5;
 }
-main #banner #cv-download {
+main #hero #cv-download {
   width: 100%;
 }
-main #banner #me {
+main #hero #me {
   height: 25rem;
 }
 @media (min-width: 1000px) {
-  main #banner :first-child {
+  main #hero :first-child {
     justify-content: flex-start !important;
   }
-  main #banner :first-child .info {
+  main #hero :first-child .info {
     max-width: 900px;
   }
-  main #banner :first-child #cv-download {
+  main #hero :first-child #cv-download {
     width: 50%;
   }
-  main #banner :first-child #me {
+  main #hero :first-child #me {
     height: 45rem;
     align-self: flex-end;
   }
+}
+main #about {
+  padding-top: 8rem !important;
 }
 
 /*# sourceMappingURL=global.css.map */
