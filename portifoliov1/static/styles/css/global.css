@@ -47,7 +47,7 @@ main #hero .focus:hover {
 main #hero #cv-download {
   width: 100%;
 }
-main #hero #me {
+main #hero #me-anime {
   height: 25rem;
 }
 @media (min-width: 1000px) {
@@ -60,13 +60,34 @@ main #hero #me {
   main #hero :first-child #cv-download {
     width: 50%;
   }
-  main #hero :first-child #me {
+  main #hero :first-child #me-anime {
     height: 45rem;
     align-self: flex-end;
   }
 }
 main #about {
   padding-top: 8rem !important;
+}
+main #about .social-medias {
+  font-size: 48px;
+}
+main #about .social-medias a {
+  text-decoration: none;
+}
+main #about .social-medias a ion-icon {
+  transition: 0.3s;
+}
+main #about .social-medias a:hover > ion-icon {
+  color: #6217A7 !important;
+}
+main #about #me-photo {
+  width: 75%;
+}
+@media (min-width: 1000px) {
+  main #about #about-text-container {
+    max-width: 50rem;
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */

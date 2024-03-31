@@ -1,40 +1,60 @@
 {% macro about() %}
 <section
   id="about"
-  class="min-vh-100 bg-dark d-flex flex-column align-items-center justify-content-center gap-3 p-5"
+  class="min-vh-100 bg-dark d-flex flex-column align-items-center gap-3 p-5"
 >
-  <div class="d-flex gap-3">
-    <h2 class="text-white fs-1">Sobre Mim</h2>
-    <ion-icon class="text-primary" size="large" name="body-outline"></ion-icon>
-  </div>
-  <div
-    class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4"
-  >
-    <div class="d-flex flex-column">
-      <img
-        src="https://www.github.com/davi-lucciola.png"
-        alt="davi-photo"
-        class="rounded-circle"
-      />
-      <div>
-        <ion-icon name="logo-linkedin"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-whatsapp"></ion-icon>
-      </div>
+  <div class="container-xl d-flex flex-column align-items-center pt-lg-5">
+    <div
+      class="d-flex gap-3 justify-content-center align-items-lg-center mb-lg-5"
+    >
+      <h2 class="text-white fs-1">Sobre Mim</h2>
+      <ion-icon
+        class="text-primary"
+        size="large"
+        name="body-outline"
+      ></ion-icon>
     </div>
-    <div class="text-white d-flex flex-column gap-4 p-3">
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed incidunt
-        beatae, ad asperiores, quia magnam sint ea corporis, quibusdam
-        voluptates temporibus. Labore quaerat debitis dolores illum atque
-        assumenda? Vel, odio.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed incidunt
-        beatae, ad asperiores, quia magnam sint ea corporis, quibusdam
-        voluptates temporibus. Labore quaerat debitis dolores illum atque
-        assumenda? Vel, odio.
-      </p>
+    <div
+      class="d-flex flex-column align-items-center w-100 flex-lg-row justify-content-lg-between mt-lg-5"
+    >
+      <div class="d-flex flex-column align-items-center gap-4">
+        <img
+          src="https://www.github.com/davi-lucciola.png"
+          id="me-photo"
+          alt="me-photo"
+          class="rounded-circle"
+        />
+        <div class="social-medias">
+          <a href="https://www.linkedin.com/in/davi-lucciola/" target="_blank">
+            <ion-icon class="text-primary" name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/davilucciola/" target="_blank">
+            <ion-icon class="text-primary" name="logo-instagram"></ion-icon>
+          </a>
+          <a
+            href="https://wa.me/5531986997442?text=Vi%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA!"
+            target="_blank"
+          >
+            <ion-icon class="text-primary" name="logo-whatsapp"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div
+        id="about-text-container"
+        class="text-white d-flex flex-column align-self-start gap-4 p-3"
+      >
+        <p>
+          Desenvolvedor e educador, desde pequeno ensinar e solucionar problemas
+          são pontos marcantes na minha vida, sempre buscando realizar minhas
+          tarefas da maneira mais inteligente possivel e auxiliando todos ao meu
+          redor a evoluir e crescer.
+        </p>
+        <p>
+          Guiado pela vontade de ajudar cada vez mais pessoas e escalar as
+          minhas soluções que tornei desenvolvedor full stack, especializado no
+          backend, e ao mesmo tempo que uni duas paixões: programação e pedagogia.
+        </p>
+      </div>
     </div>
   </div>
 </section>

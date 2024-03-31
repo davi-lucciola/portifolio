@@ -66,13 +66,11 @@ main {
       width: 100%;
     }
  
-    #me {
+    #me-anime {
       height: 25rem;
     }
-  }
 
-  @media (min-width: 1000px) {
-    #hero {
+    @media (min-width: 1000px) {
       :first-child {
         justify-content: flex-start !important;
 
@@ -84,7 +82,7 @@ main {
           width: 50% ; 
         }
     
-        #me {
+        #me-anime {
           height: 45rem;
           align-self: flex-end;
         }
@@ -94,5 +92,32 @@ main {
 
   #about {
     padding-top: 8rem !important;
+
+    .social-medias {
+      font-size: 48px;
+
+      a {
+        text-decoration: none;
+
+        ion-icon {
+          transition: 0.3s;
+        }
+      }
+
+      a:hover > ion-icon {
+        color: $primary-hover !important;
+      }
+    }
+
+    #me-photo {
+      width: 75%;
+    }
+
+    @media (min-width: 1000px) {
+      #about-text-container {
+        max-width: 50rem;
+        font-size: 24px;
+      }
+    }
   }
 }
