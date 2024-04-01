@@ -1,5 +1,19 @@
 @import "./variables";
 
+// Scrollbar Styling
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-hover;
+  border-radius: 10px;
+}
 
 header {
   font-family: $primary-font-family;
@@ -41,6 +55,16 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('/static/images/synthwave.gif');
+
+  // Snap Scroll
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+  section {
+    scroll-snap-align: start;
+  }
 
   #hero {
     p {
