@@ -1,0 +1,48 @@
+header {
+  font-family: $primary-font-family;
+  background-color: transparent;
+
+  transition: 0.5s;
+
+  nav {
+    #logo {
+      h1 {
+        padding: 2px 8px;
+        transition: 0.3s;
+        border-radius: 8px;
+      }
+    }    
+
+    #logo:hover > h1 {
+      color: $primary !important;
+      background-color: $white;
+    }
+
+    #brand {
+      height: 5rem;
+      border-radius: 50%;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        transition: 0.3s;
+      }
+
+      .nav-item:hover {
+        background-color: $primary;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    nav {
+      .nav-item {
+        width: 9rem;
+
+        a {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}

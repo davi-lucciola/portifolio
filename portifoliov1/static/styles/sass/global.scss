@@ -1,54 +1,7 @@
 @import "./variables";
+@import "./index/scroll.scss";
+@import "./index/header.scss";
 
-// Scrollbar Styling
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $primary-hover;
-  border-radius: 10px;
-}
-
-header {
-  font-family: $primary-font-family;
-
-  nav {
-    #logo {
-      h1 {
-        padding: 2px 8px;
-        transition: 0.3s;
-        border-radius: 8px;
-      }
-    }    
-
-    #logo:hover > h1 {
-      color: $primary !important;
-      background-color: $white;
-    }
-
-    #brand {
-      height: 5rem;
-      border-radius: 50%;
-    }
-
-    .navbar-nav {
-      .nav-item {
-        padding-inline: 2rem;
-        transition: 0.3s;
-      }
-
-      .nav-item:hover {
-        background-color: $primary;
-      }
-    }
-  }
-}
 
 main {
   font-family: $primary-font-family;
@@ -56,92 +9,12 @@ main {
   background-repeat: no-repeat;
   background-image: url('/static/images/synthwave.gif');
 
-  // Snap Scroll
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-
   section {
     scroll-snap-align: start;
-  }
-
-  #hero {
-    p {
-      line-height: 32px;
-    }
-
-    .focus {
-      color: $primary;
-      background-color: $white;
-      border-radius: 4px;
-      font-weight: 900;
-      padding: 2px 8px;
-      transition: 0.3s;
-    }
-    
-    .focus:hover {
-      cursor: default;
-      color: $white;
-      background-color: $primary;
-    }
-
-    #cv-download {
-      width: 100%;
-    }
- 
-    #me-anime {
-      height: 25rem;
-    }
-
-    @media (min-width: 1000px) {
-      :first-child {
-        justify-content: flex-start !important;
-
-        .info {
-          max-width: 900px;
-        }
-    
-        #cv-download {
-          width: 50% ; 
-        }
-    
-        #me-anime {
-          height: 45rem;
-          align-self: flex-end;
-        }
-      }
-    }
-  }
-
-  #about {
     padding-top: 8rem !important;
-
-    .social-medias {
-      font-size: 48px;
-
-      a {
-        text-decoration: none;
-
-        ion-icon {
-          transition: 0.3s;
-        }
-      }
-
-      a:hover > ion-icon {
-        color: $primary-hover !important;
-      }
-    }
-
-    #me-photo {
-      width: 75%;
-    }
-
-    @media (min-width: 1000px) {
-      #about-text-container {
-        max-width: 50rem;
-        font-size: 24px;
-      }
-    }
   }
+
+  @import "./index/hero.scss";
+  @import "./index/about.scss";
+  @import "./index/skills.scss";
 }

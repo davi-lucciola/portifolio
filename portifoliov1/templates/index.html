@@ -3,11 +3,13 @@
 {% from 'components/header.html' import header %}
 {% from 'components/hero.html' import hero %} 
 {% from 'components/about.html' import about %} 
+{% from 'components/skills.html' import skills %} 
 
 {% block page %} 
   {{ header() }}
   <main class="flex-grow-1 d-flex flex-column">
     {{ hero() }}
     {{ about() }}
+    {{ skills() }}
   </main>
 {% endblock %}

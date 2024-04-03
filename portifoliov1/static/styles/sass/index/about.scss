@@ -1,0 +1,28 @@
+#about {
+  .social-medias {
+    font-size: 48px;
+
+    a {
+      text-decoration: none;
+
+      ion-icon {
+        transition: 0.3s;
+      }
+    }
+
+    a:hover > ion-icon {
+      color: $primary-hover !important;
+    }
+  }
+
+  #me-photo {
+    width: 75%;
+  }
+
+  @media (min-width: 1000px) {
+    #about-text-container {
+      max-width: 50rem;
+      font-size: 24px;
+    }
+  }
+}

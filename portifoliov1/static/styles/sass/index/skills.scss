@@ -1,0 +1,24 @@
+#skills {
+  #frontend, #backend, #tools {
+    img {
+      width: 4rem;
+      height: 4rem;
+
+      object-fit: fill;
+      transition: 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    #frontend, #backend, #tools {
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{% macro skills() %}
+<section
+  id="skills"
+  class="min-vh-100 bg-dark d-flex flex-column align-items-center gap-3"
+>
+  <div class="container-xl d-flex flex-column align-items-center h-100 pt-lg-5">
+    <div class="d-flex gap-3 align-items-lg-center mb-lg-5">
+      <h2 class="text-white fs-1 m-0">Habilidades</h2>
+      <ion-icon name="hammer" class="text-primary" size="large"></ion-icon>
+    </div>
+    <div
+      class="d-flex flex-column w-100 h-100 align-items-center justify-content-around flex-lg-row align-items-lg-start justify-content-around"
+    >
+      <div id="frontend" class="d-flex flex-column align-items-center w-100">
+        <h3 class="text-white fs-2 mb-4">Frontend</h3>
+        <div class="d-flex justify-content-center flex-wrap gap-4 w-75">
+          <img src="/static/images/icons/react-icon.svg" alt="ReactJS" />
+          <img src="/static/images/icons/next-js-icon.svg" alt="NextJS" />
+          <img src="/static/images/icons/bootstrap-icon.svg" alt="Bootstrap" />
+          <img
+            src="/static/images/icons/tailwind-css-icon.svg"
+            alt="Tailwind Css"
+          />
+          <img
+            src="/static/images/icons/typescript-icon.svg"
+            alt="Typescript"
+          />
+        </div>
+      </div>
+      <div id="backend" class="d-flex flex-column align-items-center w-100">
+        <h3 class="text-white fs-2 mb-4">Backend</h3>
+        <div class="d-flex justify-content-center flex-wrap gap-4 w-75">
+          <img src="/static/images/icons/flask-icon.svg" alt="Flask" />
+          <img src="/static/images/icons/fastapi-icon.svg" alt="FastAPI" />
+          <img src="/static/images/icons/node-js-icon.svg" alt="NodeJS" />
+          <img
+            src="/static/images/icons/springboot-icon.svg"
+            alt="Springboot"
+          />
+          <img src="/static/images/icons/python-icon.svg" alt="Python" />
+          <img
+            src="/static/images/icons/postgresql-icon.svg"
+            alt="PostgreSQL"
+          />
+          <img
+            src="/static/images/icons/sql-server-icon.svg"
+            alt="SQL Server"
+          />
+          <img src="/static/images/icons/java-icon.svg" alt="Java" />
+        </div>
+      </div>
+      <div id="tools" class="d-flex flex-column align-items-center w-100">
+        <h3 class="text-white fs-2 mb-4">Ferramentas</h3>
+        <div class="d-flex justify-content-center flex-wrap gap-4 w-75">
+          <img src="/static/images/icons/git-icon.svg" alt="Git" />
+          <img src="/static/images/icons/docker-icon.svg" alt="Docker" />
+          <img src="/static/images/icons/linux-icon.svg" alt="Linux" />
+          <img src="/static/images/icons/insomnia-icon.svg" alt="Insomnia" />
+          <img src="/static/images/icons/postman-icon.svg" alt="Postman" />
+          <img src="/static/images/icons/pandas-icon.svg" alt="Pandas" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endmacro %}

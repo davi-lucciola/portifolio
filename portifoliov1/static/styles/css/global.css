@@ -12,8 +12,20 @@
   border-radius: 10px;
 }
 
+html {
+  background-color: #272727;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+html.no-scroll-snap {
+  scroll-snap-type: none;
+}
+
 header {
   font-family: "JetBrains Mono", monospace;
+  background-color: transparent;
+  transition: 0.5s;
 }
 header nav #logo h1 {
   padding: 2px 8px;
@@ -29,11 +41,18 @@ header nav #brand {
   border-radius: 50%;
 }
 header nav .navbar-nav .nav-item {
-  padding-inline: 2rem;
   transition: 0.3s;
 }
 header nav .navbar-nav .nav-item:hover {
   background-color: #731BC5;
+}
+@media (min-width: 1000px) {
+  header nav .nav-item {
+    width: 9rem;
+  }
+  header nav .nav-item a {
+    padding: 0 !important;
+  }
 }
 
 main {
@@ -41,13 +60,10 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("/static/images/synthwave.gif");
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 main section {
   scroll-snap-align: start;
+  padding-top: 8rem !important;
 }
 main #hero p {
   line-height: 32px;
@@ -86,9 +102,6 @@ main #hero #me-anime {
     align-self: flex-end;
   }
 }
-main #about {
-  padding-top: 8rem !important;
-}
 main #about .social-medias {
   font-size: 48px;
 }
@@ -108,6 +121,21 @@ main #about #me-photo {
   main #about #about-text-container {
     max-width: 50rem;
     font-size: 24px;
+  }
+}
+main #skills #frontend img, main #skills #backend img, main #skills #tools img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: fill;
+  transition: 0.3s;
+}
+main #skills #frontend img:hover, main #skills #backend img:hover, main #skills #tools img:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 1000px) {
+  main #skills #frontend img, main #skills #backend img, main #skills #tools img {
+    width: 6rem;
+    height: 6rem;
   }
 }
 

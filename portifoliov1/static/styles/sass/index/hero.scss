@@ -1,0 +1,47 @@
+#hero {
+  p {
+    line-height: 32px;
+  }
+
+  .focus {
+    color: $primary;
+    background-color: $white;
+    border-radius: 4px;
+    font-weight: 900;
+    padding: 2px 8px;
+    transition: 0.3s;
+  }
+  
+  .focus:hover {
+    cursor: default;
+    color: $white;
+    background-color: $primary;
+  }
+
+  #cv-download {
+    width: 100%;
+  }
+
+  #me-anime {
+    height: 25rem;
+  }
+
+  @media (min-width: 1000px) {
+    :first-child {
+      justify-content: flex-start !important;
+
+      .info {
+        max-width: 900px;
+      }
+  
+      #cv-download {
+        width: 50% ; 
+      }
+  
+      #me-anime {
+        height: 45rem;
+        align-self: flex-end;
+      }
+    }
+  }
+}
