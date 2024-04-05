@@ -63,7 +63,7 @@ main {
 }
 main section {
   scroll-snap-align: start;
-  padding-top: 8rem !important;
+  padding-top: 12vh !important;
 }
 main #hero p {
   line-height: 32px;
@@ -85,7 +85,7 @@ main #hero #cv-download {
   width: 100%;
 }
 main #hero #me-anime {
-  height: 25rem;
+  height: 50vh;
 }
 @media (min-width: 1000px) {
   main #hero :first-child {
@@ -98,7 +98,7 @@ main #hero #me-anime {
     width: 50%;
   }
   main #hero :first-child #me-anime {
-    height: 45rem;
+    height: 75vh;
     align-self: flex-end;
   }
 }
@@ -115,12 +115,12 @@ main #about .social-medias a:hover > ion-icon {
   color: #6217A7 !important;
 }
 main #about #me-photo {
-  width: 75%;
+  width: 60%;
 }
 @media (min-width: 1000px) {
   main #about #about-text-container {
     max-width: 50rem;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 main #skills #frontend img, main #skills #backend img, main #skills #tools img {
