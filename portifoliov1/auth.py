@@ -1,9 +1,17 @@
-from flask import Blueprint, render_template
+from portifoliov1.config import db
+from portifoliov1.models import User
+from flask import flash, redirect
+from flask_login import LoginManager
 
 
-auth_bp = Blueprint('Auth', __name__)
+login_manager = LoginManager()
 
 
-@auth_bp.route('/login', methods=['POST'])
-def login():
-    pass
+@login_manager.user_loader
+def load_user(id: int) -> User:
+    return db.session.query(User).get(id)
+
+@login_manager.unauthorized_handler
+def unauthorized_handler():
+    flash('Não autenticado.', category='error')
+    return redirect('/admin/login')

@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pórtifolio" />
-    <title>Davi Lucciola | Dev</title>
+    {% block meta %}{% endblock %}
     <link rel="stylesheet" href="/static/styles/css/bootstrap.css" />
-    <link rel="stylesheet" href="/static/styles/css/global.css" />
     <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,9 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
+    {% block style %}{% endblock %}
   </head>
   <body class="d-flex vh-100">
-    {% block page %} {% endblock %}
+    {% block page %}{% endblock %}
     <!-- Ion Icons -->
     <script
       type="module"
@@ -33,6 +32,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="/static/js/scroll.js"></script>
+    {% block scripts %}{% endblock %}
   </body>
 </html>

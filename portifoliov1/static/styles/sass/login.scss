@@ -1,0 +1,8 @@
+@import "./_variables.scss";
+
+main {
+  font-family: $primary-font-family;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/static/images/synthwave.gif');
+}

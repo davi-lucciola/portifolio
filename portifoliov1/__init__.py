@@ -1,19 +1,21 @@
 from flask import Flask, render_template
-
+from .config import Config, db, migrations
+from .auth import login_manager
+from .controllers import admin_bp
 
 def create_app():
     app = Flask(__name__)
+    app.config.from_object(Config) 
 
-    @app.route('/', methods=['GET'])
+    @app.route("/", methods=["GET"])
     def index():
-        return render_template('index.html')
-    
-    @app.route('/admin', methods=['GET'])
-    def admin():
-        return render_template()
+        return render_template("index.html")
 
-    @app.route('/admin/login', methods=['GET'])
-    def login():
-        return render_template()
+    app.register_blueprint(admin_bp)
+
+    with app.app_context():
+        db.init_app(app)
+        migrations.init_app(app)
+        login_manager.init_app(app)
 
     return app

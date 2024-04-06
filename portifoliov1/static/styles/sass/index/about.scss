@@ -16,10 +16,20 @@
   }
 
   #me-photo {
-    width: 60%;
+    width: 50%;
+  }
+
+  #about-text-container {
+    div {
+      text-align: justify;
+    }
   }
 
   @media (min-width: 1000px) {
+    #me-photo {
+      width: 70%;
+    }
+
     #about-text-container {
       max-width: 50rem;
       font-size: 20px;

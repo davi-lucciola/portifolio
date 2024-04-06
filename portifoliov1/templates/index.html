@@ -2,14 +2,30 @@
 
 {% from 'components/header.html' import header %}
 {% from 'components/hero.html' import hero %} 
-{% from 'components/about.html' import about %} 
+{% from 'components/about.html'import about %} 
 {% from 'components/skills.html' import skills %} 
+
+{% block meta %}
+  <meta
+    name="description"
+    content="Portifolio do Desenvolvedor Backend/Fullstack Davi Gomes Lucciola"
+  />
+  <title>Davi Lucciola | Dev</title>
+{% endblock %} 
+
+{% block style %}
+  <link rel="stylesheet" href="/static/styles/css/global.css" />
+{% endblock %} 
 
 {% block page %} 
   {{ header() }}
   <main class="flex-grow-1 d-flex flex-column">
-    {{ hero() }}
-    {{ about() }}
+    {{ hero() }} 
+    {{ about() }} 
     {{ skills() }}
   </main>
+{% endblock %}
+
+{% block scripts %}
+  <script src="/static/js/scroll.js"></script>
 {% endblock %}

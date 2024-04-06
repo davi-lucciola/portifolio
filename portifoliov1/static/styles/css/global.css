@@ -115,9 +115,15 @@ main #about .social-medias a:hover > ion-icon {
   color: #6217A7 !important;
 }
 main #about #me-photo {
-  width: 60%;
+  width: 50%;
+}
+main #about #about-text-container div {
+  text-align: justify;
 }
 @media (min-width: 1000px) {
+  main #about #me-photo {
+    width: 70%;
+  }
   main #about #about-text-container {
     max-width: 50rem;
     font-size: 20px;
