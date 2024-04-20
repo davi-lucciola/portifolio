@@ -160,5 +160,8 @@ main #skills #frontend img:hover, main #skills #backend img:hover, main #skills 
     height: 6rem;
   }
 }
+main #contact form {
+  max-width: 50rem;
+}
 
 /*# sourceMappingURL=global.css.map */

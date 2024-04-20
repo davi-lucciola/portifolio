@@ -1,0 +1,43 @@
+{% macro contact() %}
+<section
+  id="contact"
+  class="min-vh-100 bg-dark d-flex flex-column align-items-center gap-3"
+>
+  <div class="container-xl d-flex flex-column align-items-center h-100 gap-4">
+    <div 
+      class="d-flex gap-3 align-items-lg-center"
+      data-aos="fade-right"
+    >
+      <h2 class="text-white fs-1 m-0"> Contato </h2>
+      <ion-icon name="chatbox-ellipses" class="text-primary" size="large"></ion-icon>
+    </div>
+    <form class="w-100 p-3" action="" data-aos="fade-right">
+      <p>
+        <label for="email" class="text-white"> Email </label>
+        <input 
+          id="email" 
+          type="email" 
+          name="email" 
+          placeholder="exemple@email.com"
+          class="form-control"
+        >
+      </p>
+      <p>
+        <label for="assunto" class="text-white"> Assunto </label>
+        <input 
+          id="assunto" 
+          type="text" 
+          name="assunto" 
+          placeholder="Sobre Algo"
+          class="form-control"
+        >
+      </p>
+      <p>
+        <label for="assunto" class="text-white"> Mensagem </label>
+        <textarea name="assunto" id="assunto" class="w-100 form-control" style="resize: none;" rows="15"></textarea>
+      </p>
+      <button class="btn btn-primary w-100"> Enviar </button>
+    </form>
+  </div>
+</section>
+{% endmacro %}

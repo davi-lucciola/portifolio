@@ -4,6 +4,7 @@
 {% from 'portifolio/components/hero.html' import hero %} 
 {% from 'portifolio/components/about.html'import about %} 
 {% from 'portifolio/components/skills.html' import skills %} 
+{% from 'portifolio/components/contact.html' import contact %} 
 
 {% block meta %}
   <meta
@@ -24,6 +25,7 @@
     {{ hero() }} 
     {{ about() }} 
     {{ skills() }}
+    {{ contact() }}
   </main>
 {% endblock %}
 

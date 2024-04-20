@@ -21,4 +21,10 @@ main {
   @import "./index/hero.scss";
   @import "./index/about.scss";
   @import "./index/skills.scss";
+
+  #contact {
+    form {
+      max-width: 50rem;
+    }
+  }
 }
