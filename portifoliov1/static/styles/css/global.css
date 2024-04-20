@@ -13,6 +13,7 @@
 }
 
 html {
+  overflow-x: hidden;
   background-color: #272727;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -47,6 +48,9 @@ header nav .navbar-nav .nav-item:hover {
   background-color: #731BC5;
 }
 @media (min-width: 1000px) {
+  header {
+    padding-top: 0px !important;
+  }
   header nav .nav-item {
     width: 9rem;
   }
@@ -57,13 +61,19 @@ header nav .navbar-nav .nav-item:hover {
 
 main {
   font-family: "JetBrains Mono", monospace;
-  background-size: cover;
+  background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-image: url("/static/images/synthwave.gif");
 }
 main section {
-  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 12vh !important;
+  scroll-snap-align: start;
+}
+main #hero {
+  padding-top: 0px !important;
 }
 main #hero p {
   line-height: 32px;
@@ -121,6 +131,9 @@ main #about #about-text-container div {
   text-align: justify;
 }
 @media (min-width: 1000px) {
+  main #about {
+    padding-top: 0px !important;
+  }
   main #about #me-photo {
     width: 70%;
   }
@@ -139,6 +152,9 @@ main #skills #frontend img:hover, main #skills #backend img:hover, main #skills 
   transform: scale(1.1);
 }
 @media (min-width: 1000px) {
+  main #skills {
+    padding-top: 0px !important;
+  }
   main #skills #frontend img, main #skills #backend img, main #skills #tools img {
     width: 6rem;
     height: 6rem;

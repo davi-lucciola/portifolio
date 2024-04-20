@@ -35,6 +35,7 @@ header {
   }
 
   @media (min-width: 1000px) {
+    padding-top: 0px !important;
     nav {
       .nav-item {
         width: 9rem;

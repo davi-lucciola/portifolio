@@ -1,0 +1,13 @@
+header ion-icon {
+  font-size: 20px;
+}
+header form button {
+  width: 40px;
+  height: 40px;
+}
+
+main {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/*# sourceMappingURL=admin.css.map */

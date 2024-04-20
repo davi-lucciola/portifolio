@@ -1,7 +1,5 @@
 {% extends '_layout.html' %} 
 
-{% from 'components/toast.html' import toast, toastScript %} 
-
 {% block meta %}
   <title>Davi Lucciola | Login</title>
 {% endblock %} 
@@ -13,7 +11,7 @@
 {% block page %}
   <main class="w-100">
     <div class="container-fluid d-flex align-items-center justify-content-center min-vh-100 bg-black bg-opacity-50 w-100 h-100">
-      <div class="bg-white w-25 h-50 p-5 rounded-5">
+      <div class="bg-white w-25 h-50 p-5 rounded-5" style="min-width: 400px;">
         <h1> Login </h1>
         <form action="/login" method="POST" autocomplete="off" class="d-flex flex-column mt-5">
           <div class="mb-3">
@@ -30,9 +28,4 @@
       </div>
     </div>
   </main>
-  {{ toast() }}
-{% endblock %}
-
-{% block scripts %}
-  {{ toastScript() }}
 {% endblock %}

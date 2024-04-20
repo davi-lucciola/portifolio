@@ -10,7 +10,7 @@ admin_bp = Blueprint("Admin", __name__)
 @admin_bp.route("/admin", methods=['GET'])
 @login_required
 def admin():
-    return render_template("admin.html")
+    return render_template("admin/index.html")
 
 @admin_bp.route("/login", methods=['POST'])
 def login():
@@ -37,4 +37,4 @@ def logout():
 
 @admin_bp.route("/admin/login", methods=['GET'])
 def admin_login():
-    return render_template('login.html')
+    return render_template('admin/login.html')
