@@ -64,6 +64,7 @@ main {
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-image: url("/static/images/synthwave.gif");
+  scroll-behavior: smooth;
 }
 main section {
   display: flex;
@@ -158,6 +159,14 @@ main #skills #frontend img:hover, main #skills #backend img:hover, main #skills 
   main #skills #frontend img, main #skills #backend img, main #skills #tools img {
     width: 6rem;
     height: 6rem;
+  }
+}
+main #projects .card {
+  transition: 0.3s;
+}
+@media (min-width: 1000px) {
+  main #projects .card:hover {
+    transform: scale(1.1);
   }
 }
 main #contact form {
