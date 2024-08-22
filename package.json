@@ -3,7 +3,7 @@
     "dev": "poetry run flask run --debug",
     "install-dev": "poetry install && npm install",
     "clean": "rm -rf ./.venv && rm -rf ./node_modules",
-    "reinstall": "npm run clean && npm run pinstall",
+    "reinstall": "npm run clean && npm run install-dev",
     "style": "sass ./portifoliov1/static/styles/sass/bootstrap.scss ./portifoliov1/static/styles/css/bootstrap.css && sass ./portifoliov1/static/styles/sass/global.scss ./portifoliov1/static/styles/css/global.css && sass ./portifoliov1/static/styles/sass/login.scss ./portifoliov1/static/styles/css/login.css && sass ./portifoliov1/static/styles/sass/admin.scss ./portifoliov1/static/styles/css/admin.css"
   },
   "dependencies": {
