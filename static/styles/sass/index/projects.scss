@@ -1,0 +1,27 @@
+#projects {
+  .card {
+    transition: 0.3s;
+    max-height: 296px;
+    overflow: hidden;
+
+    .card-img-top {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .card {
+      width: 50%;
+      min-height: 400px;
+
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+  }
+}

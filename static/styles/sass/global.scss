@@ -1,0 +1,42 @@
+@import "./_variables.scss";
+@import "./index/scroll.scss";
+@import "./index/header.scss";
+
+
+main {
+  font-family: $primary-font-family;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url('/static/images/synthwave.gif');
+  scroll-behavior: smooth;
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vh !important;
+
+    scroll-snap-align: start;
+  }
+
+  .focus {
+    color: $primary;
+    background-color: $white;
+    border-radius: 4px;
+    font-weight: 900;
+    padding: 2px 8px;
+    transition: 0.3s;
+  }
+
+  @import "./index/hero.scss";
+  @import "./index/about.scss";
+  @import "./index/skills.scss";
+  @import "./index/projects.scss";
+
+  #contact {
+    form {
+      max-width: 50rem;
+    }
+  }
+}

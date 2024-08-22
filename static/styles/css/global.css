@@ -1,0 +1,190 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6217A7;
+  border-radius: 10px;
+}
+
+html {
+  overflow-x: hidden;
+  background-color: #272727;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+html.no-scroll-snap {
+  scroll-snap-type: none;
+}
+
+header {
+  font-family: "JetBrains Mono", monospace;
+  background-color: transparent;
+  transition: 0.5s;
+}
+header nav #logo h1 {
+  padding: 2px 8px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+header nav #logo:hover > h1 {
+  color: #731BC5 !important;
+  background-color: #FAFAFA;
+}
+header nav #brand {
+  height: 5rem;
+  border-radius: 50%;
+}
+header nav .navbar-nav .nav-item {
+  transition: 0.3s;
+}
+header nav .navbar-nav .nav-item:hover {
+  background-color: #731BC5;
+}
+@media (min-width: 1000px) {
+  header {
+    padding-top: 0px !important;
+  }
+  header nav .nav-item {
+    width: 9rem;
+  }
+  header nav .nav-item a {
+    padding: 0 !important;
+  }
+}
+
+main {
+  font-family: "JetBrains Mono", monospace;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("/static/images/synthwave.gif");
+  scroll-behavior: smooth;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12vh !important;
+  scroll-snap-align: start;
+}
+main .focus {
+  color: #731BC5;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  font-weight: 900;
+  padding: 2px 8px;
+  transition: 0.3s;
+}
+main #hero {
+  padding-top: 0px !important;
+}
+main #hero p {
+  line-height: 32px;
+}
+main #hero .focus:hover {
+  cursor: default;
+  color: #FAFAFA;
+  background-color: #731BC5;
+}
+main #hero #cv-download {
+  width: 100%;
+}
+main #hero #me-anime {
+  height: 50vh;
+}
+@media (min-width: 1000px) {
+  main #hero :first-child {
+    justify-content: flex-start !important;
+  }
+  main #hero :first-child .info {
+    max-width: 900px;
+  }
+  main #hero :first-child #cv-download {
+    width: 50%;
+  }
+  main #hero :first-child #me-anime {
+    height: 75vh;
+    align-self: flex-end;
+  }
+}
+main #about .social-medias {
+  font-size: 48px;
+}
+main #about .social-medias a {
+  text-decoration: none;
+}
+main #about .social-medias a ion-icon {
+  transition: 0.3s;
+}
+main #about .social-medias a:hover > ion-icon {
+  color: #6217A7 !important;
+}
+main #about #me-photo {
+  width: 50%;
+}
+main #about #about-text-container div {
+  text-align: justify;
+}
+@media (min-width: 1000px) {
+  main #about {
+    padding-top: 0px !important;
+  }
+  main #about #me-photo {
+    width: 70%;
+  }
+  main #about #about-text-container {
+    max-width: 50rem;
+    font-size: 20px;
+  }
+}
+main #skills #frontend img, main #skills #backend img, main #skills #tools img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: fill;
+  transition: 0.3s;
+}
+main #skills #frontend img:hover, main #skills #backend img:hover, main #skills #tools img:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 1000px) {
+  main #skills {
+    padding-top: 0px !important;
+  }
+  main #skills #frontend img, main #skills #backend img, main #skills #tools img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+main #projects .card {
+  transition: 0.3s;
+  max-height: 296px;
+  overflow: hidden;
+}
+main #projects .card .card-img-top {
+  height: 100%;
+}
+@media (min-width: 1000px) {
+  main #projects .card {
+    width: 50%;
+    min-height: 400px;
+  }
+  main #projects .card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  main #projects .card:hover {
+    transform: scale(1.1);
+  }
+}
+main #contact form {
+  max-width: 50rem;
+}
+
+/*# sourceMappingURL=global.css.map */

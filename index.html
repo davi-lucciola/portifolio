@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portifolio do Desenvolvedor Backend/Fullstack Davi Gomes Lucciola"
+    />
+    <title>Davi Lucciola | Dev</title>
+    <link rel="stylesheet" href="/static/styles/css/bootstrap.css" />
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles/css/global.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="container-fluid fixed-top">
+      <nav
+        class="navbar navbar-expand-lg bg-transparent container-xl p-0 align-items-stretch"
+      >
+        <a
+          id="logo"
+          href="#hero"
+          class="navbar-brand d-flex align-items-center gap-3 navbar-expand p-2 m-0"
+        >
+          <img src="/static/favicon.png" alt="davi-brand" id="brand" />
+          <h1 class="text-white fs-3">Davi Lucciola</h1>
+        </a>
+        <button
+          class="navbar-toggler bg-primary h-75 align-self-center"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="bg-dark offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body p-0 flex-grow-1">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item d-flex" data-bs-dismiss="offcanvas">
+                <a
+                  class="nav-link text-white w-100 d-flex align-items-center justify-content-lg-center ps-3"
+                  href="#about"
+                >
+                  Sobre Mim
+                </a>
+              </li>
+              <li class="nav-item d-flex" data-bs-dismiss="offcanvas">
+                <a
+                  class="nav-link text-white w-100 d-flex align-items-center justify-content-lg-center ps-3"
+                  href="#skills"
+                >
+                  Habilidades
+                </a>
+              </li>
+              <li class="nav-item d-flex" data-bs-dismiss="offcanvas">
+                <a
+                  class="nav-link text-white w-100 d-flex align-items-center justify-content-lg-center ps-3"
+                  href="#projects"
+                >
+                  Projetos
+                </a>
+              </li>
+              <li class="nav-item d-flex" data-bs-dismiss="offcanvas">
+                <a
+                  class="nav-link text-white w-100 d-flex align-items-center justify-content-lg-center ps-3"
+                  href="#contact"
+                >
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow-1 d-flex flex-column">
+      <section
+        id="hero"
+        class="container-fluid d-flex text-white min-vh-100 bg-black bg-opacity-50"
+      >
+        <div
+          class="container-xl d-flex flex-column align-items-center justify-content-end min-vh-100 ps-2 pe-2 flex-lg-row"
+        >
+          <div
+            class="info d-flex flex-column gap-3"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h1>
+              Desenvolvedor
+              <span class="text-decoration-line-through">Backend</span>
+              <strong class="focus">Full Stack</strong>
+            </h1>
+            <p class="fs-5">
+              <strong class="focus">Soluções</strong> para o seu negócio, ganhe
+              <strong>tempo</strong> na <strong>automatização</strong> de
+              processos operacionais. <strong class="focus">Escale</strong> o
+              seu negócio com <strong class="focus">Softwares</strong> de
+              <strong class="focus">Qualidade</strong>
+            </p>
+            <a
+              id="cv-download"
+              class="btn btn-primary fs-5"
+              href="/static/pdf/DaviCv.pdf"
+              target="_blank"
+            >
+              Baixar Curriculo
+            </a>
+          </div>
+          <img
+            id="me-anime"
+            src="/static/images/me.png"
+            alt="davi-lucciola-anime"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          />
+        </div>
+      </section>
+      <section
+        id="about"
+        class="min-vh-100 bg-dark d-flex flex-column align-items-center gap-3"
+      >
+        <div
+          class="container-xl d-flex flex-column align-items-center h-100 pt-lg-5"
+        >
+          <div
+            class="d-flex gap-3 justify-content-center align-items-lg-center mb-3 mb-lg-5"
+            data-aos="fade-down"
+          >
+            <h2 class="text-white fs-1 m-0">Sobre Mim</h2>
+            <ion-icon class="text-primary" size="large" name="body"></ion-icon>
+          </div>
+          <div
+            class="d-flex flex-column w-100 flex-lg-row justify-content-lg-between mt-lg-5 h-100"
+          >
+            <div
+              class="d-flex flex-column align-items-center gap-4"
+              data-aos="fade-down"
+            >
+              <img
+                src="https://www.github.com/davi-lucciola.png"
+                id="me-photo"
+                alt="me-photo"
+                class="rounded-circle"
+              />
+              <div class="social-medias">
+                <a
+                  href="https://www.linkedin.com/in/davi-lucciola/"
+                  target="_blank"
+                >
+                  <ion-icon
+                    class="text-primary"
+                    name="logo-linkedin"
+                  ></ion-icon>
+                </a>
+                <a
+                  href="https://www.instagram.com/davilucciola/"
+                  target="_blank"
+                >
+                  <ion-icon
+                    class="text-primary"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+                <a
+                  href="https://wa.me/5531986997442?text=Vi%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA!"
+                  target="_blank"
+                >
+                  <ion-icon
+                    class="text-primary"
+                    name="logo-whatsapp"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div
+              id="about-text-container"
+              class="text-white d-flex flex-column h-100 gap-4 p-3"
+              data-aos="fade-up"
+            >
+              <div
+                class="bg-secondary rounded-2 p-3 overflow-y-auto border-bottom border-2 border-primary"
+              >
+                <p>
+                  Meu nome é <strong>Davi Gomes Lucciola</strong>, sou
+                  desenvolvedor e educador. desde pequeno apaixonado por ensinar
+                  e solucionar problemas, sempre buscando aprender mais e
+                  auxiliar todos ao meu redor a evoluir e crescer.
+                </p>
+                <p>
+                  Ao longo da minha jornada, atuei em
+                  <strong>times de desenvolvimento corporativo</strong>,
+                  freelancers e também como professor de programação ensinando
+                  desde Lógica de Programação, Orientação a Objetos até
+                  desenvolvimento de sistemas completos com
+                  <strong>ReactJS</strong> no frontend e fremeworks como
+                  <strong>FastAPI</strong> e <strong>Springboot</strong> para o
+                  backend.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="min-vh-100 bg-dark d-flex flex-column align-items-center gap-3"
+      >
+        <div
+          class="container-xl d-flex flex-column align-items-center h-100 pt-lg-5 gap-4"
+        >
+          <div
+            class="d-flex gap-3 align-items-lg-center mb-lg-5"
+            data-aos="fade-left"
+          >
+            <h2 class="text-white fs-1 m-0">Habilidades</h2>
+            <ion-icon
+              name="hammer"
+              class="text-primary"
+              size="large"
+            ></ion-icon>
+          </div>
+          <div
+            class="d-flex flex-column w-100 h-100 align-items-center justify-content-center gap-5 flex-lg-row align-items-lg-start"
+          >
+            <div
+              id="frontend"
+              class="d-flex flex-column align-items-center w-100"
+              data-aos="fade-left"
+            >
+              <h3 class="text-white fs-2 mb-4">Frontend</h3>
+              <div class="d-flex justify-content-center flex-wrap gap-4 w-75">
+                <img src="/static/images/icons/react-icon.svg" alt="ReactJS" />
+                <img src="/static/images/icons/next-js-icon.svg" alt="NextJS" />
+                <img
+                  src="/static/images/icons/bootstrap-icon.svg"
+                  alt="Bootstrap"
+                />
+                <img
+                  src="/static/images/icons/tailwind-css-icon.svg"
+                  alt="Tailwind Css"
+                />
+                <img
+                  src="/static/images/icons/sass-icon.svg"
+                  alt="Typescript"
+                />
+                <img
+                  src="/static/images/icons/typescript-icon.svg"
+                  alt="Typescript"
+                />
+              </div>
+            </div>
+            <div
+              id="backend"
+              class="d-flex flex-column align-items-center w-100"
+              data-aos="fade-left"
+            >
+              <h3 class="text-white fs-2 mb-4">Backend</h3>
+              <div class="d-flex justify-content-center flex-wrap gap-4 w-75">
+                <img src="/static/images/icons/flask-icon.svg" alt="Flask" />
+                <img
+                  src="/static/images/icons/fastapi-icon.svg"
+                  alt="FastAPI"
+                />
+                <img src="/static/images/icons/node-js-icon.svg" alt="NodeJS" />
+                <img
+                  src="/static/images/icons/springboot-icon.svg"
+                  alt="Springboot"
+                />
+                <img src="/static/images/icons/python-icon.svg" alt="Python" />
+                <img
+                  src="/static/images/icons/postgresql-icon.svg"
+                  alt="PostgreSQL"
+                />
+                <img
+                  src="/static/images/icons/sql-server-icon.svg"
+                  alt="SQL Server"
+                />
+                <img src="/static/images/icons/java-icon.svg" alt="Java" />
+              </div>
+            </div>
+            <div
+              id="tools"
+              class="d-flex flex-column align-items-center w-100"
+              data-aos="fade-left"
+            >
+              <h3 class="text-white fs-2 mb-4">Ferramentas</h3>
+              <div class="d-flex justify-content-center flex-wrap gap-4 w-75">
+                <img src="/static/images/icons/git-icon.svg" alt="Git" />
+                <img src="/static/images/icons/docker-icon.svg" alt="Docker" />
+                <img src="/static/images/icons/linux-icon.svg" alt="Linux" />
+                <img
+                  src="/static/images/icons/insomnia-icon.svg"
+                  alt="Insomnia"
+                />
+                <img
+                  src="/static/images/icons/postman-icon.svg"
+                  alt="Postman"
+                />
+                <img src="/static/images/icons/pandas-icon.svg" alt="Pandas" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="min-vh-100 d-flex flex-column align-items-center bg-black bg-opacity-50"
+      >
+        <div
+          class="container-xl d-flex flex-column align-items-center h-100 gap-4"
+        >
+          <div
+            class="d-flex gap-3 align-items-lg-center mb-lg-5"
+            data-aos="fade-right"
+          >
+            <h2 class="text-white fs-1 m-0">Projetos</h2>
+            <ion-icon
+              name="layers"
+              class="text-primary"
+              size="large"
+            ></ion-icon>
+          </div>
+          <div
+            id="projects-carousel"
+            class="carousel slide w-100 h-100"
+            data-aos="fade-right"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="d-flex flex-column gap-3 gap-lg-5 flex-lg-row p-lg-5"
+                >
+                  <a
+                    class="card bg-secondary shadow"
+                    href="https://github.com/davi-lucciola/Knockbank"
+                    target="_blank"
+                  >
+                    <img
+                      src="/static/images/projects/knockbank.png"
+                      class="card-img-top"
+                      alt="project-portifolio"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title border-0 text-white">KnockBank</h3>
+                      <div
+                        class="card-text text-white flex-grow-1 d-flex flex-column justify-content-between align-items-start"
+                      >
+                        <p>
+                          Aplicação Bancaria com saques, depositos,
+                          transfêrencias, extratos e resumos de entrada e saída
+                          monetário.
+                        </p>
+                        <strong class="focus"
+                          >Flask, NextJS (TS), TailwindCSS, Docker e MySQL</strong
+                        >
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="card bg-secondary shadow"
+                    href="https://github.com/davi-lucciola/StockControl"
+                    target="_blank"
+                  >
+                    <img
+                      src="/static/images/projects/stock-control.png"
+                      class="card-img-top"
+                      alt="project-stock-control"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title border-0 text-white">
+                        Stock Control
+                      </h3>
+                      <div
+                        class="card-text text-white flex-grow-1 d-flex flex-column justify-content-between align-items-start"
+                      >
+                        <p>
+                          Aplicação para controle de estoque de produtos com
+                          historico de movimentações disponivel
+                        </p>
+                        <strong class="focus"
+                          >FasAPI, ReactJS (TS), Bootstrap, Docker e
+                          PostgresSQL</strong
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="d-flex flex-column gap-3 gap-lg-5 flex-lg-row p-lg-5"
+                >
+                  <a
+                    class="card bg-secondary shadow"
+                    href="https://github.com/davi-lucciola/SynthPortifolio"
+                    target="_blank"
+                  >
+                    <img
+                      src="/static/images/projects/portifolio.png"
+                      class="card-img-top"
+                      alt="project-portifolio"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title border-0 text-white">
+                        SynthPortifolio
+                      </h3>
+                      <div
+                        class="card-text text-white flex-grow-1 d-flex flex-column justify-content-between align-items-start"
+                      >
+                        <p>
+                          Portifólio com apresentação pessoal, curriculo,
+                          projetos e contato no estilo synthwave.
+                        </p>
+                        <strong class="focus">Html, Javascript, SASS e Bootstrap</strong>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="card bg-secondary shadow"
+                    href="https://github.com/davi-lucciola/MegaSenaGamesSorter"
+                    target="_blank"
+                  >
+                    <img
+                      src="/static/images/projects/mega-sena-game-sorter.png"
+                      class="card-img-top"
+                      alt="project-mega-sena-game-sorter"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title border-0 text-white">
+                        Mega Sena Games Sorter
+                      </h3>
+                      <div
+                        class="card-text text-white flex-grow-1 d-flex flex-column justify-content-between align-items-start"
+                      >
+                        <p>
+                          Site para sortear jogos da mega sena que nunca tiveram
+                          4 numeros sorteados em outro jogo anteriormente.
+                        </p>
+                        <strong class="focus"
+                          >Python, Streamlit e Pandas</strong
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="d-flex flex-column gap-3 gap-lg-5 flex-lg-row p-lg-5"
+                >
+                  <a
+                    class="card bg-secondary shadow"
+                    href="https://github.com/davi-lucciola/TicTacToe"
+                    target="_blank"
+                  >
+                    <img
+                      src="/static/images/projects/tiktoktoe.png"
+                      class="card-img-top"
+                      alt="project-portifolio"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title border-0 text-white">
+                        Jogo da Velha
+                      </h3>
+                      <div
+                        class="card-text text-white flex-grow-1 d-flex flex-column justify-content-between align-items-start"
+                      >
+                        <p>
+                          Portifólio com apresentação pessoal, curriculo,
+                          projetos e contato.
+                        </p>
+                        <strong class="focus"> ReactJS (JS) </strong>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- <a
+                    class="card bg-secondary shadow"
+                    href="https://github.com/davi-lucciola/MegaSenaGamesSorter"
+                    target="_blank"
+                  >
+                    <img
+                      src="/static/images/projects/mega-sena-game-sorter.png"
+                      class="card-img-top"
+                      alt="project-mega-sena-game-sorter"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title border-0 text-white">
+                        Mega Sena Games Sorter
+                      </h3>
+                      <p class="card-text text-white">
+                        Site para sortear jogos da mega sena que nunca tiveram 4
+                        numeros sorteados em outro jogo anteriormente.
+                      </p>
+                    </div>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 d-flex w-100 justify-content-around">
+              <button
+                class="btn btn-primary rounded d-flex justify-content-center align-items-center"
+                type="button"
+                data-bs-target="#projects-carousel"
+                data-bs-slide="prev"
+              >
+                <ion-icon name="chevron-back" size="large"></ion-icon>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="btn btn-primary rounded d-flex justify-content-center align-items-center"
+                type="button"
+                data-bs-target="#projects-carousel"
+                data-bs-slide="next"
+              >
+                <ion-icon name="chevron-forward" size="large"></ion-icon>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="min-vh-100 bg-dark d-flex flex-column align-items-center gap-3"
+      >
+        <div
+          class="container-xl d-flex flex-column align-items-center h-100 gap-4"
+        >
+          <div class="d-flex gap-3 align-items-lg-center" data-aos="fade-up">
+            <h2 class="text-white fs-1 m-0">Contato (Em Breve)</h2>
+            <ion-icon
+              name="chatbox-ellipses"
+              class="text-primary"
+              size="large"
+            ></ion-icon>
+          </div>
+          <form class="w-100 p-3" action="" data-aos="fade-up">
+            <p>
+              <label for="email" class="text-white"> Email </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="exemple@email.com"
+                class="form-control"
+                disabled
+              />
+            </p>
+            <p>
+              <label for="assunto" class="text-white"> Assunto </label>
+              <input
+                id="assunto"
+                type="text"
+                name="assunto"
+                placeholder="Sobre Algo"
+                class="form-control"
+                disabled
+              />
+            </p>
+            <p>
+              <label for="assunto" class="text-white"> Mensagem </label>
+              <textarea
+                name="assunto"
+                id="assunto"
+                class="w-100 form-control"
+                style="resize: none"
+                rows="15"
+                disabled
+              ></textarea>
+            </p>
+            <button class="btn btn-primary w-100" disabled>Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/static/js/scroll.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
