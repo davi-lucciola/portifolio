@@ -16,7 +16,13 @@
   }
 
   #me-anime {
-    height: 50vh;
+    height: 30vh;
+  }
+
+  @media (min-width: 500px) {
+    #me-anime {
+      height: 50vh;
+    }
   }
 
   @media (min-width: 1000px) {

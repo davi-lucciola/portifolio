@@ -32,6 +32,7 @@ header nav #logo h1 {
   padding: 2px 8px;
   transition: 0.3s;
   border-radius: 8px;
+  display: none;
 }
 header nav #logo:hover > h1 {
   color: #731BC5 !important;
@@ -46,6 +47,11 @@ header nav .navbar-nav .nav-item {
 }
 header nav .navbar-nav .nav-item:hover {
   background-color: #731BC5;
+}
+@media (min-width: 400px) {
+  header nav #logo h1 {
+    display: block;
+  }
 }
 @media (min-width: 1000px) {
   header {
@@ -71,7 +77,7 @@ main section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 12vh !important;
+  padding-top: 10vh !important;
   scroll-snap-align: start;
 }
 main .focus {
@@ -97,7 +103,12 @@ main #hero #cv-download {
   width: 100%;
 }
 main #hero #me-anime {
-  height: 50vh;
+  height: 30vh;
+}
+@media (min-width: 500px) {
+  main #hero #me-anime {
+    height: 50vh;
+  }
 }
 @media (min-width: 1000px) {
   main #hero :first-child {
@@ -115,7 +126,7 @@ main #hero #me-anime {
   }
 }
 main #about .social-medias {
-  font-size: 48px;
+  font-size: 32px;
 }
 main #about .social-medias a {
   text-decoration: none;
@@ -127,31 +138,50 @@ main #about .social-medias a:hover > ion-icon {
   color: #6217A7 !important;
 }
 main #about #me-photo {
-  width: 50%;
+  width: 40%;
 }
 main #about #about-text-container div {
   text-align: justify;
 }
+main #about #about-text-container div p {
+  font-size: 12px;
+}
+@media (min-width: 500px) {
+  main #about #about-text-container div p {
+    font-size: 16px;
+  }
+}
 @media (min-width: 1000px) {
   main #about {
     padding-top: 0px !important;
+  }
+  main #about .social-medias {
+    font-size: 48px;
   }
   main #about #me-photo {
     width: 70%;
   }
   main #about #about-text-container {
     max-width: 50rem;
+  }
+  main #about #about-text-container div p {
     font-size: 20px;
   }
 }
 main #skills #frontend img, main #skills #backend img, main #skills #tools img {
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   object-fit: fill;
   transition: 0.3s;
 }
 main #skills #frontend img:hover, main #skills #backend img:hover, main #skills #tools img:hover {
   transform: scale(1.1);
+}
+@media (min-width: 500px) {
+  main #skills #frontend img, main #skills #backend img, main #skills #tools img {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 @media (min-width: 1000px) {
   main #skills {
@@ -164,11 +194,11 @@ main #skills #frontend img:hover, main #skills #backend img:hover, main #skills 
 }
 main #projects .card {
   transition: 0.3s;
-  max-height: 296px;
+  max-height: 232px;
   overflow: hidden;
 }
-main #projects .card .card-img-top {
-  height: 100%;
+main #projects .card .card-text p, main #projects .card .card-text strong {
+  display: none;
 }
 @media (min-width: 1000px) {
   main #projects .card {
@@ -178,6 +208,9 @@ main #projects .card .card-img-top {
   main #projects .card .card-img-top {
     height: 200px;
     object-fit: cover;
+  }
+  main #projects .card .card-text p, main #projects .card .card-text strong {
+    display: block;
   }
   main #projects .card:hover {
     transform: scale(1.1);

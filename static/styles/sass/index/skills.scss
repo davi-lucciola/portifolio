@@ -1,8 +1,8 @@
 #skills {
   #frontend, #backend, #tools {
     img {
-      width: 4rem;
-      height: 4rem;
+      width: 2rem;
+      height: 2rem;
 
       object-fit: fill;
       transition: 0.3s;
@@ -10,6 +10,15 @@
 
     img:hover {
       transform: scale(1.1);
+    }
+  }
+
+  @media (min-width: 500px) {
+    #frontend, #backend, #tools {
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
     }
   }
 
