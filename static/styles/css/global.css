@@ -152,9 +152,6 @@ main #about #about-text-container div p {
   }
 }
 @media (min-width: 1000px) {
-  main #about {
-    padding-top: 0px !important;
-  }
   main #about .social-medias {
     font-size: 48px;
   }
