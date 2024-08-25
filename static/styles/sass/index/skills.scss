@@ -13,17 +13,7 @@
     }
   }
 
-  @media (min-width: 500px) {
-    #frontend, #backend, #tools {
-      img {
-        width: 4rem;
-        height: 4rem;
-      }
-    }
-  }
-
   @media (min-width: 1000px) {
-    padding-top: 0px !important;
     #frontend, #backend, #tools {
       img {
         width: 6rem;
