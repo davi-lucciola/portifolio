@@ -176,8 +176,8 @@ main #skills #frontend img:hover, main #skills #backend img:hover, main #skills 
 }
 @media (min-width: 1000px) {
   main #skills #frontend img, main #skills #backend img, main #skills #tools img {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 main #projects .card {
