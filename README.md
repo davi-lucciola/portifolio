@@ -12,27 +12,12 @@ Apresentação profissional e pessoal, com portifólio para a demonstração dos
 
 ## Como rodar local
 
-### Com Docker
+### Live Server
 
-1. Build a Imagem
-
-   > `docker build . -t portifolio-app`
-
-2. Rode a Imagem
-   > `docker run -p 5000:5000 --name portifolio-app -d portifolio-app`
-
-### Com o Poetry
-
-1. Instale o [Poetry](https://python-poetry.org/)
-2. Instale as depêndencias
-
-   > `poetry install`
-
-3. Ative o ambiente virtual
-
-   > `poetry shell`
-
-4. Rode com o Flask
-   > `flask run --debug`
-   > ou
-   > `npm run dev`
+1. Clone o Repositório com `git clone https://github.com/davi-lucciola/portifolio.git`
+2. Instale a extensão live server no VS Code
+![LiveServerExtension](./assets/live-server-extension.png)
+3. Clique com o botão direito no arquivo `index.html`
+![IndexImg](./assets/index-html.png)
+4. Clique em "Open with Live Server" ou "Abrir com o Live Server"
+![OpenWithLiveServer](./assets/open-with-live-server.png)
