@@ -2,27 +2,29 @@
 
 ![PortifolioHero](./assets/hero.png)
 
-Apresentação profissional e pessoal, com portifólio para a demonstração dos projetos e do meu conhecimento em programação
+ Professional and personal presentetion, with a portifolio to demonstrate my knowledge in programming and web development
 
-## Tecnologias Utilizadas
+## Technologies
 
 - ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 - ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## Como rodar local
+## How to Run Local
 
 ### Live Server
 
-1. Clone o Repositório com `git clone https://github.com/davi-lucciola/portifolio.git`
-2. Instale a extensão live server no VS Code
+1. Clone the repository with `git clone https://github.com/davi-lucciola/portifolio.git`
+2. Install the `Live Server` in VS Code
 
 ![LiveServerExtension](./assets/live-server-extension.png)
 
-3. Clique com o botão direito no arquivo `index.html`
+3. Click with the right button in the file `index.html`
 
 ![IndexImg](./assets/index-html.png)
 
-4. Clique em "Open with Live Server" ou "Abrir com o Live Server"
+4. Click in "Open with Live Server"
 
 ![OpenWithLiveServer](./assets/open-with-live-server.png)
+
+And that is it! My portifolio is running!
