@@ -2,7 +2,7 @@
 
 ![PortifolioHero](./assets/hero.png)
 
- Professional and personal presentetion, with a portifolio to demonstrate my knowledge in programming and web development
+ Professional and personal presentation, with a portifolio to demonstrate my knowledge in programming and web development
 
 ## Technologies
 
